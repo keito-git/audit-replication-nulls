@@ -115,8 +115,11 @@ vlink(b5, b6)
 ax.text((b3[0] + b4[1]) / 2, ROW_B1 - ROWH / 2 - 1.8,
         "no generative model required",
         ha="center", va="top", fontsize=11)
-ax.text(b6[0] - 1.8, ROW_B2 + ROWH / 2 + 1.2, "after execution",
-        ha="right", va="center", fontsize=11)
+# the label belongs to the arrow between the run and the delivery check, so it
+# sits against that arrow rather than floating in the band
+x7 = (b6[0] + b6[1]) / 2
+ax.text(x7 - 1.4, (ROW_B1 - ROWH / 2 + ROW_B2 + ROWH / 2) / 2,
+        "after execution", ha="right", va="center", fontsize=11)
 
 # each criterion constrains the element that uses it, so the two connectors land
 # on different boxes and are routed through corridors of their own
