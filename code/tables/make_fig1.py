@@ -32,18 +32,19 @@ FIG = pathlib.Path(__file__).resolve().parents[2] / "output"
 FIG.mkdir(parents=True, exist_ok=True)
 
 EDGE, INK = "black", "black"
-X0, COLW, GAP = 2.0, 23.0, 5.0
-COL = [X0 + i * (COLW + GAP) for i in range(4)]
+X0, COLW, GAP = 2.0, 18.0, 4.0
+COL = [X0 + i * (COLW + GAP) for i in range(5)]
 ROWH = 8.0
 
-fig, ax = plt.subplots(figsize=(11.0, 7.0))
+fig, ax = plt.subplots(figsize=(11.6, 7.4))
 ax.set_xlim(-6, 114)
-ax.set_ylim(0, 92)
+ax.set_ylim(-2, 92)
 ax.axis("off")
 
 ROW_A = 80.0
-ROW_B1, ROW_B2, ROW_B3 = 58.0, 44.0, 30.0
-ROW_C = 11.0
+ROW_B1, ROW_B2 = 56.0, 42.0
+ROW_C = 24.0
+ROW_D = 8.0
 
 
 def lane(label, ytop, ybot):
@@ -90,41 +91,45 @@ def vlink(a, b):
 lane("A  External evidence", ROW_A + 6.0, ROW_A - 6.0)
 a1 = box(0, ROW_A, "Live platform")
 a2 = box(1, ROW_A, "Intervention $T$")
-a3 = box(2, ROW_A, "Directional finding $d$")
+a3 = box(2, ROW_A, "Directional\nfinding $d$")
 a4 = box(3, ROW_A, "The audit's own\ncontrol condition")
 hlink(a1, a2)
 hlink(a2, a3)
 hlink(a3, a4)
 
 # ---- band B: the procedure
-lane("B  Validation procedure", ROW_B1 + 6.0, ROW_B3 - 6.0)
-b1 = box(0, ROW_B1, "1  Fix the direction\n2  Transplant the control")
-b2 = box(1, ROW_B1, "3  Null-agent test\n4  Calibrated null")
-b3 = box(2, ROW_B1, "6  Design sensitivity\nand split replication")
-b4 = box(3, ROW_B1, "Run the simulation")
-b5 = box(3, ROW_B2, "7  Delivery check")
-b6 = box(3, ROW_B3, "5  Attribution analysis")
+lane("B  Validation procedure", ROW_B1 + 6.0, ROW_B2 - 6.0)
+b1 = box(0, ROW_B1, "1  Fix the\ndirection")
+b2 = box(1, ROW_B1, "2  Transplant\nthe control")
+# the Japanese label is the widest in the figure, so it takes a smaller size
+b3 = box(2, ROW_B1, "3  Null-agent test\n4  Calibrated null", fs=12)
+b4 = box(3, ROW_B1, "6  Design sensitivity\nand split replication")
+b5 = box(4, ROW_B1, "Run the\nsimulation")
+b6 = box(4, ROW_B2, "7  Delivery check")
 hlink(b1, b2)
 hlink(b2, b3)
 hlink(b3, b4)
-vlink(b4, b5)
+hlink(b4, b5)
 vlink(b5, b6)
 
-ax.text((b2[0] + b3[1]) / 2, ROW_B1 - ROWH / 2 - 1.8,
+ax.text((b3[0] + b4[1]) / 2, ROW_B1 - ROWH / 2 - 1.8,
         "no generative model required",
         ha="center", va="top", fontsize=11)
-ax.text(b5[0] - 1.8, (ROW_B1 + ROW_B2) / 2, "after execution",
+ax.text(b6[0] - 1.8, ROW_B2 + ROWH / 2 + 1.2, "after execution",
         ha="right", va="center", fontsize=11)
 
-CORR1, CORR2 = 72.0, 69.0
-xb1 = (b1[0] + b1[1]) / 2
+# each criterion constrains the element that uses it, so the two connectors land
+# on different boxes and are routed through corridors of their own
+CORR1, CORR2 = 71.0, 67.0
 route([((a3[0] + a3[1]) / 2, ROW_A - ROWH / 2), ((a3[0] + a3[1]) / 2, CORR1),
-       (xb1 - 3.5, CORR1), (xb1 - 3.5, ROW_B1 + ROWH / 2)], dashed=True)
+       ((b1[0] + b1[1]) / 2, CORR1), ((b1[0] + b1[1]) / 2, ROW_B1 + ROWH / 2)],
+      dashed=True)
 route([((a4[0] + a4[1]) / 2, ROW_A - ROWH / 2), ((a4[0] + a4[1]) / 2, CORR2),
-       (xb1 + 3.5, CORR2), (xb1 + 3.5, ROW_B1 + ROWH / 2)], dashed=True)
+       ((b2[0] + b2[1]) / 2, CORR2), ((b2[0] + b2[1]) / 2, ROW_B1 + ROWH / 2)],
+      dashed=True)
 
-# ---- band C: how the verdict is read
-lane("C  Verdict", ROW_C + 7.5, ROW_C - 7.5)
+# ---- band C: the verdict the delivery check and the criteria produce
+lane("C  Verdict", ROW_C + 7.0, ROW_C - 7.0)
 labels = [
     ("Pass", "direction agrees,\npower sufficient"),
     ("Inconclusive", "direction stable,\npower insufficient"),
@@ -133,17 +138,32 @@ labels = [
 ]
 cb = []
 for i, (lab, note) in enumerate(labels):
-    c = box(i, ROW_C, lab, fs=12, h=5.8)
+    c = box(i, ROW_C, lab, fs=12, h=5.6)
     cb.append(c)
-    ax.text((c[0] + c[1]) / 2, ROW_C - 5.0, note, ha="center", va="top",
+    ax.text((c[0] + c[1]) / 2, ROW_C - 4.8, note, ha="center", va="top",
             fontsize=10.5, linespacing=1.45)
 
+# the delivery check and the pass criteria are what decide the verdict, so the
+# spine that feeds the four outcomes starts there
 spine = ROW_C + 7.0
-arrow(((b6[0] + b6[1]) / 2, ROW_B3 - ROWH / 2), ((b6[0] + b6[1]) / 2, spine + 0.6))
-ax.plot([(cb[0][0] + cb[0][1]) / 2, (cb[3][0] + cb[3][1]) / 2], [spine, spine],
-        color=INK, linewidth=1.0, zorder=4)
+x6 = (b6[0] + b6[1]) / 2
+xl = (cb[0][0] + cb[0][1]) / 2
+ax.plot([x6, x6], [ROW_B2 - ROWH / 2, spine], color=INK, linewidth=1.0, zorder=4)
+ax.plot([xl, x6], [spine, spine], color=INK, linewidth=1.0, zorder=4)
 for c in cb:
-    arrow(((c[0] + c[1]) / 2, spine), ((c[0] + c[1]) / 2, ROW_C + 2.9))
+    arrow(((c[0] + c[1]) / 2, spine), ((c[0] + c[1]) / 2, ROW_C + 2.8))
+ax.text(x6 - 1.8, (ROW_B2 + spine) / 2 + 1.0,
+        "on delivery and the pass criteria",
+        ha="right", va="center", fontsize=11)
+
+# ---- band D: what a pass is then subjected to
+lane("D  Interpretation", ROW_D + 5.0, ROW_D - 5.0)
+d1 = box(0, ROW_D, "5  Attribution analysis", span=2)
+xd = (COL[0] + COLW + COL[1]) / 2
+route([(cb[0][1], ROW_C), (xd, ROW_C), (xd, ROW_D + ROWH / 2)])
+ax.text(d1[1] + 2.0, ROW_D,
+        "how much of a passing reproduction\nthe agents alone already explain",
+        ha="left", va="center", fontsize=11, linespacing=1.45)
 
 # ---- legend
 ly = 90.0
