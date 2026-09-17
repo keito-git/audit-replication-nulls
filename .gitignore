@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+output/*.tex
+output/*.pdf
+output/numbers.json
+output/stability.json
+output/nullagent.json
+output/application.json

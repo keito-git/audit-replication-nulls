@@ -1,0 +1,495 @@
+{
+ "items": [
+  {
+   "category": "anger",
+   "text": "I am so sick of this constant nonsense ruining my entire day completely",
+   "h": 0.01694915254237288,
+   "id": 0,
+   "high_h": false
+  },
+  {
+   "category": "anger",
+   "text": "Why does nobody care about the basic rules anymore is beyond me",
+   "h": 0.038461538461538464,
+   "id": 1,
+   "high_h": false
+  },
+  {
+   "category": "anger",
+   "text": "This is absolutely unacceptable and I have had enough of this mess",
+   "h": 0.09090909090909091,
+   "id": 2,
+   "high_h": true
+  },
+  {
+   "category": "anger",
+   "text": "I cannot believe they actually pulled this stunt right in front of us",
+   "h": 0.05263157894736842,
+   "id": 3,
+   "high_h": false
+  },
+  {
+   "category": "anger",
+   "text": "Stop wasting my time with these pathetic excuses and broken promises now",
+   "h": 0.04918032786885246,
+   "id": 4,
+   "high_h": false
+  },
+  {
+   "category": "anger",
+   "text": "I am furious about how they completely ignored all my hard work today",
+   "h": 0.05263157894736842,
+   "id": 5,
+   "high_h": false
+  },
+  {
+   "category": "anger",
+   "text": "This is the absolute worst customer service I have ever witnessed in life",
+   "h": 0.04918032786885246,
+   "id": 6,
+   "high_h": false
+  },
+  {
+   "category": "anger",
+   "text": "Why are they still pretending everything is fine when it is clearly broken",
+   "h": 0.06451612903225806,
+   "id": 7,
+   "high_h": true
+  },
+  {
+   "category": "anger",
+   "text": "I am done dealing with this incompetence and terrible attitude from management",
+   "h": 0.029850746268656716,
+   "id": 8,
+   "high_h": false
+  },
+  {
+   "category": "anger",
+   "text": "Nothing ever changes and I am so tired of this endless frustration now",
+   "h": 0.05172413793103448,
+   "id": 9,
+   "high_h": false
+  },
+  {
+   "category": "grievance",
+   "text": "Another day another fine for something ridiculous that nobody actually understands.",
+   "h": 0.05555555555555555,
+   "id": 10,
+   "high_h": false
+  },
+  {
+   "category": "grievance",
+   "text": "They promised change but everything stays exactly the same as before.",
+   "h": 0.06896551724137931,
+   "id": 11,
+   "high_h": true
+  },
+  {
+   "category": "grievance",
+   "text": "Why is customer service never actually able to help anyone ever?",
+   "h": 0.03773584905660377,
+   "id": 12,
+   "high_h": false
+  },
+  {
+   "category": "grievance",
+   "text": "My package arrived damaged again and now I have to fight.",
+   "h": 0.043478260869565216,
+   "id": 13,
+   "high_h": false
+  },
+  {
+   "category": "grievance",
+   "text": "Nobody seems to care about the rules anymore except when it suits them.",
+   "h": 0.05172413793103448,
+   "id": 14,
+   "high_h": false
+  },
+  {
+   "category": "grievance",
+   "text": "Waiting on hold for an hour just to get hung up on.",
+   "h": 0.07692307692307693,
+   "id": 15,
+   "high_h": true
+  },
+  {
+   "category": "grievance",
+   "text": "It is exhausting constantly having to prove my worth to people.",
+   "h": 0.057692307692307696,
+   "id": 16,
+   "high_h": false
+  },
+  {
+   "category": "grievance",
+   "text": "The app keeps crashing right when I need to use it most.",
+   "h": 0.09090909090909091,
+   "id": 17,
+   "high_h": true
+  },
+  {
+   "category": "grievance",
+   "text": "Why do I always have to deal with the mess others leave?",
+   "h": 0.11363636363636363,
+   "id": 18,
+   "high_h": true
+  },
+  {
+   "category": "grievance",
+   "text": "Nothing ever gets fixed properly the first time around here.",
+   "h": 0.06,
+   "id": 19,
+   "high_h": true
+  },
+  {
+   "category": "fear",
+   "text": "I hear footsteps behind me when the street is completely empty and dark tonight",
+   "h": 0.07575757575757576,
+   "id": 20,
+   "high_h": true
+  },
+  {
+   "category": "fear",
+   "text": "My heart pounds so hard I think it might break out of my chest",
+   "h": 0.10204081632653061,
+   "id": 21,
+   "high_h": true
+  },
+  {
+   "category": "fear",
+   "text": "The phone keeps ringing but I am too scared to answer it now",
+   "h": 0.041666666666666664,
+   "id": 22,
+   "high_h": false
+  },
+  {
+   "category": "fear",
+   "text": "Loud noises outside make me wish I could just hide under my bed",
+   "h": 0.0392156862745098,
+   "id": 23,
+   "high_h": false
+  },
+  {
+   "category": "fear",
+   "text": "Something feels wrong in this house and I do not know what it is",
+   "h": 0.0784313725490196,
+   "id": 24,
+   "high_h": true
+  },
+  {
+   "category": "fear",
+   "text": "Shadows seem to move on their own when I turn off the light",
+   "h": 0.10638297872340426,
+   "id": 25,
+   "high_h": true
+  },
+  {
+   "category": "fear",
+   "text": "I am alone and that thought terrifies me more than anything else ever",
+   "h": 0.08771929824561403,
+   "id": 26,
+   "high_h": true
+  },
+  {
+   "category": "fear",
+   "text": "Every creak in the floor sounds like someone walking right behind me again",
+   "h": 0.04838709677419355,
+   "id": 27,
+   "high_h": false
+  },
+  {
+   "category": "fear",
+   "text": "Breathing feels difficult when fear takes over my entire body and mind completely",
+   "h": 0.028985507246376812,
+   "id": 28,
+   "high_h": false
+  },
+  {
+   "category": "fear",
+   "text": "I cannot sleep because I am afraid of what dreams might come tonight",
+   "h": 0.05357142857142857,
+   "id": 29,
+   "high_h": false
+  },
+  {
+   "category": "joy",
+   "text": "Sunlight streaming through the window makes my heart feel so light today.",
+   "h": 0.09836065573770492,
+   "id": 30,
+   "high_h": true
+  },
+  {
+   "category": "joy",
+   "text": "Finally finished the project and I could not be happier with the result.",
+   "h": 0.0847457627118644,
+   "id": 31,
+   "high_h": true
+  },
+  {
+   "category": "joy",
+   "text": "Watching my friends laugh together reminds me how blessed I truly am.",
+   "h": 0.07017543859649122,
+   "id": 32,
+   "high_h": true
+  },
+  {
+   "category": "joy",
+   "text": "The smell of fresh coffee this morning brought a huge smile to my face.",
+   "h": 0.08771929824561403,
+   "id": 33,
+   "high_h": true
+  },
+  {
+   "category": "joy",
+   "text": "Received amazing news that made my entire week instantly brighter and better.",
+   "h": 0.03076923076923077,
+   "id": 34,
+   "high_h": false
+  },
+  {
+   "category": "joy",
+   "text": "Walking in the park and feeling grateful for every single breath I take.",
+   "h": 0.03389830508474576,
+   "id": 35,
+   "high_h": false
+  },
+  {
+   "category": "joy",
+   "text": "Reunited with an old friend and the joy is absolutely overflowing right now.",
+   "h": 0.047619047619047616,
+   "id": 36,
+   "high_h": false
+  },
+  {
+   "category": "joy",
+   "text": "Listening to my favorite song on repeat and dancing around the living room.",
+   "h": 0.016129032258064516,
+   "id": 37,
+   "high_h": false
+  },
+  {
+   "category": "joy",
+   "text": "Nothing beats the feeling of accomplishing a goal I worked hard for.",
+   "h": 0.07142857142857142,
+   "id": 38,
+   "high_h": true
+  },
+  {
+   "category": "joy",
+   "text": "Simply sitting here appreciating the peaceful moment fills me with pure happiness.",
+   "h": 0.05714285714285714,
+   "id": 39,
+   "high_h": false
+  },
+  {
+   "category": "contentment",
+   "text": "Coffee steam rising while the morning light paints the quiet kitchen walls",
+   "h": 0.07936507936507936,
+   "id": 40,
+   "high_h": true
+  },
+  {
+   "category": "contentment",
+   "text": "Finding peace in the simple rhythm of a slow Sunday afternoon",
+   "h": 0.058823529411764705,
+   "id": 41,
+   "high_h": true
+  },
+  {
+   "category": "contentment",
+   "text": "Grateful for the steady sound of rain against the window on a cold day",
+   "h": 0.03508771929824561,
+   "id": 42,
+   "high_h": false
+  },
+  {
+   "category": "contentment",
+   "text": "My small garden finally blooming after weeks of careful tending and patience",
+   "h": 0.0,
+   "id": 43,
+   "high_h": false
+  },
+  {
+   "category": "contentment",
+   "text": "Sitting on the porch watching the neighborhood children laugh as they play",
+   "h": 0.14285714285714285,
+   "id": 44,
+   "high_h": true
+  },
+  {
+   "category": "contentment",
+   "text": "Nothing compares to the comfort of an old book on a rainy evening",
+   "h": 0.03773584905660377,
+   "id": 45,
+   "high_h": false
+  },
+  {
+   "category": "contentment",
+   "text": "Contentment arrives when I finally put down my phone and just breathe",
+   "h": 0.05172413793103448,
+   "id": 46,
+   "high_h": false
+  },
+  {
+   "category": "contentment",
+   "text": "The kettle humming softly while bread toasts perfectly marks my ideal morning",
+   "h": 0.045454545454545456,
+   "id": 47,
+   "high_h": false
+  },
+  {
+   "category": "contentment",
+   "text": "I feel deeply at rest watching the sunset fade into twilight",
+   "h": 0.06,
+   "id": 48,
+   "high_h": true
+  },
+  {
+   "category": "contentment",
+   "text": "Simple meals shared with loved ones always fill my heart with quiet joy",
+   "h": 0.06779661016949153,
+   "id": 49,
+   "high_h": true
+  },
+  {
+   "category": "gratitude",
+   "text": "Thank you for always being there when I need you the most.",
+   "h": 0.08695652173913043,
+   "id": 50,
+   "high_h": true
+  },
+  {
+   "category": "gratitude",
+   "text": "Grateful for the little things that make every single day brighter.",
+   "h": 0.07142857142857142,
+   "id": 51,
+   "high_h": true
+  },
+  {
+   "category": "gratitude",
+   "text": "Your support means the world to me and I truly appreciate it.",
+   "h": 0.02040816326530612,
+   "id": 52,
+   "high_h": false
+  },
+  {
+   "category": "gratitude",
+   "text": "Thanks for helping me grow into the best version of myself.",
+   "h": 0.0625,
+   "id": 53,
+   "high_h": true
+  },
+  {
+   "category": "gratitude",
+   "text": "I am so lucky to have such amazing people in my life.",
+   "h": 0.04878048780487805,
+   "id": 54,
+   "high_h": false
+  },
+  {
+   "category": "gratitude",
+   "text": "Your kindness today made a huge difference in my entire week.",
+   "h": 0.02,
+   "id": 55,
+   "high_h": false
+  },
+  {
+   "category": "gratitude",
+   "text": "Remembering to say thank you for all the love you show.",
+   "h": 0.06818181818181818,
+   "id": 56,
+   "high_h": true
+  },
+  {
+   "category": "gratitude",
+   "text": "Appreciating the hard work and dedication behind every little success.",
+   "h": 0.05,
+   "id": 57,
+   "high_h": false
+  },
+  {
+   "category": "gratitude",
+   "text": "Grateful for fresh starts and the opportunity to try again.",
+   "h": 0.04081632653061224,
+   "id": 58,
+   "high_h": false
+  },
+  {
+   "category": "gratitude",
+   "text": "Thanks for listening and understanding without judgment or condition.",
+   "h": 0.03333333333333333,
+   "id": 59,
+   "high_h": false
+  },
+  {
+   "category": "neutral",
+   "text": "The weather today looks mild and partly cloudy.",
+   "h": 0.05128205128205128,
+   "id": 60,
+   "high_h": false
+  },
+  {
+   "category": "neutral",
+   "text": "I have finished writing the weekly report.",
+   "h": 0.08571428571428572,
+   "id": 61,
+   "high_h": true
+  },
+  {
+   "category": "neutral",
+   "text": "The store opens at nine in the morning.",
+   "h": 0.06451612903225806,
+   "id": 62,
+   "high_h": true
+  },
+  {
+   "category": "neutral",
+   "text": "This is the third time I have tried.",
+   "h": 0.14285714285714285,
+   "id": 63,
+   "high_h": true
+  },
+  {
+   "category": "neutral",
+   "text": "The package arrived on the scheduled delivery date.",
+   "h": 0.06976744186046512,
+   "id": 64,
+   "high_h": true
+  },
+  {
+   "category": "neutral",
+   "text": "We are meeting at the café around noon.",
+   "h": 0.03225806451612903,
+   "id": 65,
+   "high_h": false
+  },
+  {
+   "category": "neutral",
+   "text": "The document needs to be reviewed by tomorrow.",
+   "h": 0.02631578947368421,
+   "id": 66,
+   "high_h": false
+  },
+  {
+   "category": "neutral",
+   "text": "Traffic was moderate during the evening commute home.",
+   "h": 0.044444444444444446,
+   "id": 67,
+   "high_h": false
+  },
+  {
+   "category": "neutral",
+   "text": "I am reading a book about history lately.",
+   "h": 0.030303030303030304,
+   "id": 68,
+   "high_h": false
+  },
+  {
+   "category": "neutral",
+   "text": "The meeting is scheduled for next Monday morning.",
+   "h": 0.04878048780487805,
+   "id": 69,
+   "high_h": false
+  }
+ ],
+ "h_cut": 0.058823529411764705
+}
