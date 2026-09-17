@@ -89,9 +89,9 @@ def vlink(a, b):
 
 # ---- band A: the external evidence the criteria come from
 lane("A  External evidence", ROW_A + 6.0, ROW_A - 6.0)
-a1 = box(0, ROW_A, "Live platform")
+a1 = box(0, ROW_A, "Target system $\\mathcal{S}$")
 a2 = box(1, ROW_A, "Intervention $T$")
-a3 = box(2, ROW_A, "Directional\nfinding $d$")
+a3 = box(2, ROW_A, "Direction $d$ of\nthe observable $\\psi$")
 a4 = box(3, ROW_A, "The audit's own\ncontrol condition")
 hlink(a1, a2)
 hlink(a2, a3)
@@ -103,7 +103,7 @@ b1 = box(0, ROW_B1, "1  Fix the\ndirection")
 b2 = box(1, ROW_B1, "2  Transplant\nthe control")
 # the Japanese label is the widest in the figure, so it takes a smaller size
 b3 = box(2, ROW_B1, "3  Null-agent test\n4  Calibrated null", fs=12)
-b4 = box(3, ROW_B1, "6  Design sensitivity\nand split replication")
+b4 = box(3, ROW_B1, "6  Design sensitivity\nand split replication", fs=12)
 b5 = box(4, ROW_B1, "Run the\nsimulation")
 b6 = box(4, ROW_B2, "7  Delivery check")
 hlink(b1, b2)
@@ -131,9 +131,9 @@ route([((a4[0] + a4[1]) / 2, ROW_A - ROWH / 2), ((a4[0] + a4[1]) / 2, CORR2),
 # ---- band C: the verdict the delivery check and the criteria produce
 lane("C  Verdict", ROW_C + 7.0, ROW_C - 7.0)
 labels = [
-    ("Pass", "direction agrees,\npower sufficient"),
-    ("Inconclusive", "direction stable,\npower insufficient"),
-    ("Fail", "direction not stable"),
+    ("Pass", "every pass\ncriterion met"),
+    ("Inconclusive", "amplification and stable\ndirection, power short"),
+    ("Fail", "no amplification, or\ndirection not stable"),
     ("Void", "treatment not delivered"),
 ]
 cb = []
@@ -152,9 +152,9 @@ ax.plot([x6, x6], [ROW_B2 - ROWH / 2, spine], color=INK, linewidth=1.0, zorder=4
 ax.plot([xl, x6], [spine, spine], color=INK, linewidth=1.0, zorder=4)
 for c in cb:
     arrow(((c[0] + c[1]) / 2, spine), ((c[0] + c[1]) / 2, ROW_C + 2.8))
-ax.text(x6 - 1.8, (ROW_B2 + spine) / 2 + 1.0,
-        "on delivery and the pass criteria",
-        ha="right", va="center", fontsize=11)
+ax.text((xl + x6) / 2, spine + 1.4,
+        "separated on delivery and on the pass criteria",
+        ha="center", va="bottom", fontsize=11)
 
 # ---- band D: what a pass is then subjected to
 lane("D  Interpretation", ROW_D + 5.0, ROW_D - 5.0)
