@@ -6,3 +6,4 @@ output/numbers.json
 output/stability.json
 output/nullagent.json
 output/application.json
+output/pool_stats.json
