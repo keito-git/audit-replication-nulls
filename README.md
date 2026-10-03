@@ -1,7 +1,8 @@
 # Audit replication and distribution-matched nulls
 
-Code and stored runs for *Verification and Validation of Social Simulation with
-Large Language Models: Audit Replication and Distribution-Matched Nulls*.
+Code and stored runs for a manuscript under review. The full citation is added
+here once the paper is published; it is left out while review is double
+anonymized.
 
 The procedure validates an LLM social simulation by whether it reproduces the
 directional findings of a published algorithm audit, and then measures, with
