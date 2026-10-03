@@ -14,8 +14,9 @@ successful reproduction the agents alone already explain.
 ```
 code/simulation/   the simulation, the recommender, the pre-expenditure tests
                    and the verdict
-code/tables/       every table and figure in the paper, generated from the
-                   stored runs
+code/tables/       every data table and every figure in the paper, generated
+                   from the stored runs. The one table the paper does not derive
+                   from data is its comparison with prior work
 data/              the frozen content pool and all stored runs
 output/            where the generators write
 ```
@@ -28,8 +29,9 @@ runs.
 ```
 cd code/tables
 python3 make_tables.py            # verdict, adherence, split replication
+python3 pool_stats.py             # composition of the frozen content pool
 python3 null_agent.py             # the pre-expenditure test of the environment
-python3 stability.py              # repeated splits, equivalence, Figure 4
+python3 stability.py              # repeated splits, equivalence, Figure 3
 python3 sensitivity.py            # aggregation windows
 python3 environment_compare.py    # tally recommender against a contextual bandit
 python3 prompt_styles.py          # explicit, persona, behaviour history
@@ -37,7 +39,7 @@ python3 second_control.py         # the two meaningless controls
 python3 distribution_check.py     # a distribution-level criterion on the same runs
 python3 mediation.py              # amplification regressed on agent-side quantities
 python3 application.py            # the regime with no audit finding
-python3 make_figures.py           # Figures 2 and 3
+python3 make_figures.py           # Figures 2 and 4
 python3 make_fig1.py              # Figure 1
 python3 attribution_ladder.py --from-cache
 ```
